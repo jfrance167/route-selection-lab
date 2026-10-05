@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "model": "fictional-installed-route-subset",
+  "context": "destination_only",
+  "status": "supported",
+  "routes": [
+    {
+      "id": "default4",
+      "network": "0.0.0.0/0",
+      "action": "forward",
+      "original_prefix": "0.0.0.0/0",
+      "next_hop": "192.0.2.1",
+      "original_next_hop": "192.0.2.1",
+      "egress": "lab-a"
+    },
+    {
+      "id": "host",
+      "network": "192.0.2.20/32",
+      "action": "discard",
+      "original_prefix": "192.0.2.20/32"
+    },
+    {
+      "id": "r24",
+      "network": "192.0.2.0/24",
+      "action": "forward",
+      "original_prefix": "192.0.2.0/24",
+      "next_hop": "192.0.2.2",
+      "original_next_hop": "192.0.2.2",
+      "egress": "lab-b"
+    },
+    {
+      "id": "r25",
+      "network": "192.0.2.0/25",
+      "action": "forward",
+      "original_prefix": "192.0.2.0/25",
+      "next_hop": "192.0.2.3",
+      "original_next_hop": "192.0.2.3",
+      "egress": "lab-c"
+    }
+  ],
+  "results": [
+    {
+      "destination": "192.0.2.20",
+      "original_destination": "192.0.2.20",
+      "decision": "selected_discard",
+      "longest_prefix_length": 32,
+      "survivor_ids": [
+        "host"
+      ],
+      "trace": [
+        {
+          "id": "default4",
+          "reason": "shorter_match"
+        },
+        {
+          "id": "host",
+          "reason": "longest_match"
+        },
+        {
+          "id": "r24",
+          "reason": "shorter_match"
+        },
+        {
+          "id": "r25",
+          "reason": "shorter_match"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "Longest fixture action discards; no shorter-prefix fallback inferred."
+    },
+    {
+      "destination": "192.0.2.127",
+      "original_destination": "192.0.2.127",
+      "decision": "selected_forward",
+      "longest_prefix_length": 25,
+      "survivor_ids": [
+        "r25"
+      ],
+      "trace": [
+        {
+          "id": "default4",
+          "reason": "shorter_match"
+        },
+        {
+          "id": "host",
+          "reason": "does_not_contain"
+        },
+        {
+          "id": "r24",
+          "reason": "shorter_match"
+        },
+        {
+          "id": "r25",
+          "reason": "longest_match"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "One longest fixture path; next-hop usability and actual forwarding unknown."
+    },
+    {
+      "destination": "192.0.2.128",
+      "original_destination": "192.0.2.128",
+      "decision": "selected_forward",
+      "longest_prefix_length": 24,
+      "survivor_ids": [
+        "r24"
+      ],
+      "trace": [
+        {
+          "id": "default4",
+          "reason": "shorter_match"
+        },
+        {
+          "id": "host",
+          "reason": "does_not_contain"
+        },
+        {
+          "id": "r24",
+          "reason": "longest_match"
+        },
+        {
+          "id": "r25",
+          "reason": "does_not_contain"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "One longest fixture path; next-hop usability and actual forwarding unknown."
+    },
+    {
+      "destination": "198.51.100.20",
+      "original_destination": "198.51.100.20",
+      "decision": "selected_forward",
+      "longest_prefix_length": 0,
+      "survivor_ids": [
+        "default4"
+      ],
+      "trace": [
+        {
+          "id": "default4",
+          "reason": "longest_match"
+        },
+        {
+          "id": "host",
+          "reason": "does_not_contain"
+        },
+        {
+          "id": "r24",
+          "reason": "does_not_contain"
+        },
+        {
+          "id": "r25",
+          "reason": "does_not_contain"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "One longest fixture path; next-hop usability and actual forwarding unknown."
+    },
+    {
+      "destination": "2001:db8::1",
+      "original_destination": "2001:db8::1",
+      "decision": "no_model_route",
+      "longest_prefix_length": null,
+      "survivor_ids": [],
+      "trace": [
+        {
+          "id": "default4",
+          "reason": "different_family"
+        },
+        {
+          "id": "host",
+          "reason": "different_family"
+        },
+        {
+          "id": "r24",
+          "reason": "different_family"
+        },
+        {
+          "id": "r25",
+          "reason": "different_family"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "No installed fixture prefix matches; live reachability is unknown."
+    }
+  ]
+}

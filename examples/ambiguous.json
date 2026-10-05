@@ -1,0 +1,4 @@
+{"version":1,"context":"destination_only","routes":[
+  {"id":"a","prefix":"192.0.2.0/24","action":"forward","next_hop":"192.0.2.1","egress":"lab-a"},
+  {"id":"b","prefix":"192.0.2.0/24","action":"forward","next_hop":"192.0.2.2","egress":"lab-b"}
+],"destinations":["192.0.2.20"]}

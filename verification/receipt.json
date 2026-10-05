@@ -1,0 +1,52 @@
+{
+  "mutation_shortest-prefix": {
+    "exit_code": 1,
+    "detected": true
+  },
+  "mutation_first-tie": {
+    "exit_code": 1,
+    "detected": true
+  },
+  "normal": {
+    "exit_code": 0
+  },
+  "optimized": {
+    "exit_code": 0
+  },
+  "bandit": {
+    "exit_code": 0,
+    "findings": 0,
+    "errors": 0
+  },
+  "compileall": {
+    "exit_code": 0
+  },
+  "demos": {
+    "ambiguous": {
+      "exit_code": 0,
+      "status": "supported"
+    },
+    "ecmp": {
+      "exit_code": 0,
+      "status": "supported"
+    },
+    "lookup": {
+      "exit_code": 0,
+      "status": "supported"
+    },
+    "unsupported": {
+      "exit_code": 3,
+      "status": "unsupported_policy"
+    }
+  },
+  "python": "3.13.7",
+  "source_restored": true,
+  "hashes": {
+    "route_lab.py": "df2a30b691a8dd172b42be4bddc598d767eb184d8ae0872ccbf3827cd91e9c07",
+    "tests/test_route_lab.py": "a084494fa9d4d51a388055b7bd919ec0fb47eaec3a0c63f3280f2251b4f218cf",
+    "examples/ambiguous.json": "3cf7262cdcd53312cba7d156d7908fc493f4a67d30d192fb5000022ea2fce2a6",
+    "examples/ecmp.json": "4fb4c6f53ca175f1b9c358adf66e34faede74d388a28e7db8004e942672660e9",
+    "examples/lookup.json": "df1253233fcac73bb33fcf342a736fbc9be310135596117fc11ab279dfa30989",
+    "examples/unsupported.json": "cb3d80fc8f0da6a2c14b171c16a24e4373270a98cc1367cc43bf609be58bff54"
+  }
+}

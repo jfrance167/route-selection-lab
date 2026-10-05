@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "model": "fictional-installed-route-subset",
+  "context": "destination_only",
+  "status": "supported",
+  "routes": [
+    {
+      "id": "a",
+      "network": "192.0.2.0/24",
+      "action": "forward",
+      "original_prefix": "192.0.2.0/24",
+      "next_hop": "192.0.2.1",
+      "original_next_hop": "192.0.2.1",
+      "egress": "lab-a"
+    },
+    {
+      "id": "b",
+      "network": "192.0.2.0/24",
+      "action": "forward",
+      "original_prefix": "192.0.2.0/24",
+      "next_hop": "192.0.2.2",
+      "original_next_hop": "192.0.2.2",
+      "egress": "lab-b"
+    }
+  ],
+  "results": [
+    {
+      "destination": "192.0.2.20",
+      "original_destination": "192.0.2.20",
+      "decision": "ambiguous_equal_best",
+      "longest_prefix_length": 24,
+      "survivor_ids": [
+        "a",
+        "b"
+      ],
+      "trace": [
+        {
+          "id": "a",
+          "reason": "longest_match"
+        },
+        {
+          "id": "b",
+          "reason": "longest_match"
+        }
+      ],
+      "actual_flow_path": "unknown",
+      "explanation": "Several longest fixture paths; no tie policy or flow path inferred."
+    }
+  ]
+}

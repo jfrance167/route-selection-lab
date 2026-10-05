@@ -1,0 +1,15 @@
+# State
+
+Phase: approved stages 2–4 complete locally. Coordinator SUCCESSORS.md October 5 01:41 addendum read and recorded; SCHEMA.md frozen before code. Implemented original exact-bytes API/CLI, strict parser/canonical paths/groups, longest-prefix/tie/discard classifier, four fictional demos, tests and portfolio docs. No third-party installation/execution, standalone Git initialization or network/device experiments.
+
+Authority: Jake's original direct mandate in coordinator chat 01a10a45-1a24-78b3-9cef-7c461a966d26 was verified earlier in this chat. October 5 01:25 research assignment was followed by explicit stages 2–4 approval at 01:41. Sole writer is this existing chat, project route-selection-lab/. No new chats, messages or scheduler. Root pulls files/results.
+
+Recommendation: original Python stdlib destination-only lookup among fictional already-installed entries; strict family separation, explicit equal-best/declared-ECMP and unsupported contexts. Candidate route installation, protocol metric comparisons and actual reachability stay outside scope. Compared subnet/address-scope interpretation as a lower-complexity but more overlapping alternate.
+
+Drafting: local attempt truncated and wrong; rejected. Fresh free-worker readiness passed; one deliberately selected OpenRouter public draft returned no text. No retries/paid fallback. Raw local evidence and sanitized remote/readiness records retained under research/. Codex reviewed and wrote final research/plan.
+
+Verification: 21 tests pass normally and under -O on Windows CPython 3.13.7, including optimized CLI children and actual closed-pipe error exit. Independent bit-mask oracle checks 32 fixed destinations; input permutation preserves tie reports; forbidden-capability mocks pass. compileall exit 0; Bandit 1.9.4 zero findings/errors. Shortest-prefix and first-tie mutations caught (5 and 3 failures); exact source restored, final suites passed. Four demos captured: lookup/ambiguous/ECMP exit 0, recognized unsupported exit 3. Evidence: verification/REPORT.md and receipt.json (source/tests/fixtures hashes). ECC actual-source self-review fixed confirmed shutdown flush exit120 defect; no remaining owner-confirmed defect. No independent review, Linux/other-runtime, hosted CI/CodeQL or dedicated secret-scan guarantee. No authenticated route data or live packets.
+
+Next: coordinator can review completed evidence and determine further scope; no automatic expansion or publication. Stop new scope October 6 08:00 America/New_York. Preserve earlier work and shared tools. Original scanner live Linux SYN remains NOT RUN; DNS local completion is separate and unchanged. Coordinator handles prior DNS pending knowledge integration.
+
+Obsidian note written and reconciled with verified completion using normal app approval at C:/Users/Jake/Downloads/Jakes Vault/02 Research/2026-10-05 Route Selection Lab Plan.md. Final SHA-256 29402f1657ab8b73b169a1656be62977bec94836fac3e327989c3e279f907e2b. Prior hash checked before replacing, preserving any concurrent work. Local source retained as research/KNOWLEDGE-NOTE.md. No shared tooling or other-project writes.

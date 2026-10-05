@@ -1,0 +1,6 @@
+{"version":1,"context":"destination_only","routes":[
+  {"id":"default4","prefix":"0.0.0.0/0","action":"forward","next_hop":"192.0.2.1","egress":"lab-a"},
+  {"id":"r24","prefix":"192.0.2.0/24","action":"forward","next_hop":"192.0.2.2","egress":"lab-b"},
+  {"id":"r25","prefix":"192.0.2.0/25","action":"forward","next_hop":"192.0.2.3","egress":"lab-c"},
+  {"id":"host","prefix":"192.0.2.20/32","action":"discard"}
+],"destinations":["192.0.2.20","192.0.2.127","192.0.2.128","198.51.100.20","2001:db8::1"]}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "model": "fictional-installed-route-subset",
+  "context": "source_policy",
+  "status": "unsupported_policy",
+  "routes": [],
+  "results": [],
+  "reason": "Context needs policy/installation/resolution/flow rules outside this model; common payload validated."
+}
